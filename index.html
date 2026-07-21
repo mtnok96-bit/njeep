@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>نجيب الحداد — مهندس أنظمة Full-Stack &amp; AI</title>
+<meta name="description" content="نجيب الحداد، متخصص تقنية معلومات مستقل، يبني أنظمة برمجية حقيقية معزّزة بالذكاء الاصطناعي.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+</head>
+<body>
+
+<div class="grain"></div>
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">N.</span>
+      <span class="brand-name">نجيب الحداد</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about"><span class="tag">01</span> نبذة</a>
+      <a href="#skills"><span class="tag">02</span> المهارات</a>
+      <a href="#projects"><span class="tag">03</span> المشاريع</a>
+      <a href="#contact"><span class="tag">04</span> تواصل</a>
+    </nav>
+    <a href="#contact" class="nav-cta">لنعمل سويًا</a>
+    <button class="nav-burger" id="navBurger" aria-label="فتح القائمة">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <canvas id="circuitCanvas"></canvas>
+  <div class="hero-inner">
+    <p class="eyebrow">// متخصص تقنية معلومات — مستقل</p>
+    <h1 class="hero-title">
+      أبني أنظمة <span class="hl">حقيقية</span>،
+      <br>
+      والذكاء الاصطناعي <span class="hl-alt">جزء منها</span>
+      <br>
+      لا زينتها.
+    </h1>
+    <p class="hero-sub">
+      نجيب الحداد — مهندس Full-Stack أصمم وأنفّذ أنظمة برمجية متكاملة من الفكرة إلى الإطلاق،
+      وأدمج الذكاء الاصطناعي حيث يخلق قيمة فعلية: تحليل عقود، تفريغ اجتماعات، تسعير عقاري ذكي.
+    </p>
+    <div class="hero-actions">
+      <a href="#projects" class="btn btn-primary">شاهد مشاريعي</a>
+      <a href="#contact" class="btn btn-ghost">تواصل معي</a>
+    </div>
+
+    <div class="terminal">
+      <div class="terminal-bar">
+        <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+        <span class="terminal-title">najeeb@systems: ~</span>
+      </div>
+      <div class="terminal-body" id="terminalBody"></div>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>مرّر للأسفل</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="section-head">
+    <span class="tag">01</span>
+    <h2>نبذة عني</h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="lead">
+        أعمل بشكل مستقل كمتخصص تقنية معلومات، أُغطّي المسافة كاملة بين فكرة المشروع وبين نظام
+        يعمل فعليًا في يد المستخدم. لا أنظر للذكاء الاصطناعي كموضة أضيفها للواجهة، بل كأداة توضع
+        في مكانها الصحيح داخل نظام هندسي سليم.
+      </p>
+      <p>
+        عملت على أنظمة تمتد من تطبيقات Flutter متكاملة، إلى خدمات Backend بلغة Python وFastAPI،
+        وصولًا إلى نماذج تعلّم آلي مدرّبة على بيانات واقعية من سوق العقارات في اليمن. أوازن دائمًا
+        بين المتانة التقنية وبين الفهم العميق لسياق المشكلة التي أحلّها.
+      </p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">3+</span>
+          <span class="stat-label">مشاريع متكاملة منشورة</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">54</span>
+          <span class="stat-label">حيًا بيانات مُدرَّبة عليها (مشروع العقارات)</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Full</span>
+          <span class="stat-label">Stack — من الواجهة إلى النموذج</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-visual">
+      <div class="code-card">
+        <div class="code-card-header">
+          <span class="tag">stack.json</span>
+        </div>
+        <pre><code><span class="c-key">"languages"</span>: [<span class="c-str">"Python"</span>, <span class="c-str">"Dart"</span>, <span class="c-str">"JavaScript"</span>],
+<span class="c-key">"backend"</span>: [<span class="c-str">"FastAPI"</span>, <span class="c-str">"Flask"</span>],
+<span class="c-key">"frontend"</span>: [<span class="c-str">"Flutter"</span>, <span class="c-str">"React"</span>, <span class="c-str">"Vite"</span>],
+<span class="c-key">"ai_ml"</span>: [<span class="c-str">"OpenAI Whisper"</span>, <span class="c-str">"scikit-learn"</span>, <span class="c-str">"GradientBoosting"</span>],
+<span class="c-key">"tools"</span>: [<span class="c-str">"Git"</span>, <span class="c-str">"VS Code"</span>, <span class="c-str">"Android Studio"</span>],
+<span class="c-key">"philosophy"</span>: <span class="c-str">"AI augments, never replaces the system"</span></code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+  <div class="section-head">
+    <span class="tag">02</span>
+    <h2>المهارات</h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card">
+      <div class="skill-icon">◧</div>
+      <h3>تطوير التطبيقات</h3>
+      <p>بناء تطبيقات Flutter كاملة: واجهات RTL/عربية، أنظمة ثيمات ديناميكية، وهيكلة نظيفة باستخدام Provider.</p>
+      <div class="skill-tags"><span>Flutter</span><span>Dart</span><span>Provider</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⌁</div>
+      <h3>خدمات Backend</h3>
+      <p>تصميم APIs متكاملة بـ FastAPI وFlask، مطابقة دقيقة لمتطلبات الواجهة الأمامية، وهيكلة قابلة للتوسّع.</p>
+      <div class="skill-tags"><span>FastAPI</span><span>Flask</span><span>REST APIs</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">◈</div>
+      <h3>الذكاء الاصطناعي التطبيقي</h3>
+      <p>دمج نماذج AI كمكوّن داعم داخل نظام حقيقي: تفريغ صوتي، تحليل مستندات، نماذج تنبؤ هجينة.</p>
+      <div class="skill-tags"><span>Whisper</span><span>scikit-learn</span><span>NLP</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">▦</div>
+      <h3>بيانات وتحليل</h3>
+      <p>بناء وتنظيف مجموعات بيانات موزونة، ودمج المعرفة الميدانية الحقيقية مع النماذج الإحصائية.</p>
+      <div class="skill-tags"><span>Data Cleaning</span><span>Feature Eng.</span><span>Pandas</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">⌘</div>
+      <h3>بيئة التطوير وإدارة المشاريع</h3>
+      <p>ضبط بيئات تطوير معقدة، حل مشاكل البناء الطبقية (Gradle، JDK، SDKs)، وإدارة الإصدارات عبر Git.</p>
+      <div class="skill-tags"><span>Git</span><span>Gradle</span><span>Android SDK</span></div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">◫</div>
+      <h3>تصميم واجهات عربية</h3>
+      <p>دعم كامل لـ RTL، وتصميم تجربة مستخدم تراعي القارئ العربي دون التضحية بالحداثة البصرية.</p>
+      <div class="skill-tags"><span>RTL</span><span>UX</span><span>Theming</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <div class="section-head">
+    <span class="tag">03</span>
+    <h2>المشاريع</h2>
+  </div>
+
+  <div class="project-list">
+
+    <article class="project-card" data-accent="mint">
+      <div class="project-info">
+        <span class="project-eyebrow">مشروع نشط — Backend Python</span>
+        <h3>Scribe AI</h3>
+        <p>
+          منصة ذكية لتفريغ الاجتماعات صوتيًا وتحويلها إلى نصوص منظمة وملخصات قابلة للبحث،
+          مبنية بـ Python وFastAPI، وتعتمد على نموذج OpenAI Whisper للتفريغ الصوتي الدقيق،
+          بالتعاون مع واجهة أمامية مبنية بـ Vite وReact.
+        </p>
+        <ul class="project-points">
+          <li>واجهة برمجية RESTful متكاملة مصمّمة لتطابق احتياجات الواجهة الأمامية بدقة</li>
+          <li>تفريغ صوتي عالي الدقة عبر OpenAI Whisper</li>
+          <li>عمل جماعي منظم بين فريق Backend وFrontend</li>
+        </ul>
+        <div class="project-tags"><span>Python</span><span>FastAPI</span><span>Whisper</span><span>React</span></div>
+      </div>
+      <div class="project-visual">
+        <div class="mono-badge">/api/transcribe</div>
+      </div>
+    </article>
+
+    <article class="project-card" data-accent="blue">
+      <div class="project-info">
+        <span class="project-eyebrow">تطبيق Flutter متكامل</span>
+        <h3>PDF Master</h3>
+        <p>
+          تطبيق شامل لأدوات التعامل مع ملفات PDF، يضم نحو 20 أداة موزعة على تصنيفات
+          (تحويل، تحرير، تنظيم، أمان، OCR)، مبني بالكامل بـ Flutter مع دعم كامل للثيم
+          الداكن والفاتح وواجهة عربية RTL أصيلة.
+        </p>
+        <ul class="project-points">
+          <li>~20 أداة PDF عبر 5 تصنيفات رئيسية</li>
+          <li>نظام ثيمات ديناميكي (Provider) للتبديل بين الوضع الداكن والفاتح</li>
+          <li>دعم OCR واستخراج النصوص من المستندات الممسوحة</li>
+        </ul>
+        <div class="project-tags"><span>Flutter</span><span>Dart</span><span>OCR</span><span>RTL</span></div>
+      </div>
+      <div class="project-visual">
+        <div class="mono-badge">flutter build apk</div>
+      </div>
+    </article>
+
+    <article class="project-card" data-accent="coral">
+      <div class="project-info">
+        <span class="project-eyebrow">تنبؤ ذكي بأسعار العقارات</span>
+        <h3>نظام تسعير عقاري — سوق صنعاء</h3>
+        <p>
+          نظام تسعير هجين لسوق العقارات في صنعاء، يجمع بين المنطق القائم على قاموس أسعار الأحياء
+          (65%) ونموذج تعلّم آلي (35%) مبني على GradientBoostingRegressor مع تحويل لوغاريتمي للسعر،
+          مدرّب على بيانات موزونة عبر 54 حيًا.
+        </p>
+        <ul class="project-points">
+          <li>نظام هجين: 65% قواعد ميدانية + 35% نموذج تعلّم آلي</li>
+          <li>معالجة بيانات دقيقة: 3,000 سجل موزون عبر 54 حيًا</li>
+          <li>تصحيح بيانات التدريب بالاستناد إلى خبرة ميدانية حقيقية بالسوق المحلي</li>
+        </ul>
+        <div class="project-tags"><span>Flask</span><span>scikit-learn</span><span>Flutter</span><span>ML</span></div>
+      </div>
+      <div class="project-visual">
+        <div class="mono-badge">model.predict(district)</div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <span class="tag">04</span>
+    <h2>لنبنِ شيئًا سويًا</h2>
+    <p>
+      سواء كان لديك فكرة نظام تحتاج من يبنيها من الصفر، أو مشروع قائم يحتاج تطويرًا
+      أو دمج ذكاء اصطناعي حقيقي فيه — يسعدني أن أسمع عنه.
+    </p>
+    <div class="contact-actions">
+       <a href="" class="btn btn-ghost" id="githubLink">واتساب واتصال 772819340</a>
+      <a href="mtnok96@gmail.com" class="btn btn-primary">راسلني عبر البريد</a>
+      <a href="https://github.com/mtnok96-bit" class="btn btn-ghost" id="githubLink">GitHub</a>
+    </div>
+  </div>
+  <footer class="footer">
+    <span>© <span id="year"></span> نجيب الحداد. جميع الحقوق محفوظة.</span>
+    <span class="footer-tag">Built with intent, not templates.</span>
+  </footer>
+</section>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
